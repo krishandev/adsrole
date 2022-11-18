@@ -1,0 +1,35 @@
+#topdiv1{
+    background-color: rgb(9, 22, 115);
+    color: white;
+}
+#topdiv2{
+    background-color: rgb(9, 22, 115);
+    color: white;
+    
+}
+.fa-brands{
+    padding: 0.5rem;
+    float: right;
+    font-size: larger;
+}
+.col-md-4{
+    text-align: center;
+    font-weight: 900;
+}
+.navbar{
+    background-color: rgb(9, 22, 115);
+    color: white;
+}
+.nav-link{
+    color: white;
+    
+}
+.nav-item{
+    padding: auto;
+    padding-left: 3rem;
+}
+
+#menu{
+    border: 1px solid white;
+    background-color: rgb(9, 22, 115);
+}
