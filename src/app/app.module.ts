@@ -9,6 +9,7 @@ import { HomepageBodyComponent } from './homepage-body/homepage-body.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { WebdesignComponent } from './services/webdesign/webdesign.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    HomepageBodyComponent
+    HomepageBodyComponent,
+    WebdesignComponent
   ],
   imports: [
     BrowserModule,

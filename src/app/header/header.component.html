@@ -37,9 +37,19 @@
                         <li class="nav-item">
                           <a class="nav-link" routerLink="about">ABOUT US</a> 
                         </li>
-                        <li class="nav-item">
+                        <!-- <li class="nav-item" >
                           <a class="nav-link" routerLink="music-school">SERVICES</a>
-                        </li>
+                        </li> -->
+                        <div class="dropdown">
+                          <button class="btn btn-secondary dropdown-toggle dropdown_Button" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            SERVICES
+                          </button>
+                          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" routerLink="webdesign">Web Design</a>
+                            <a class="dropdown-item" href="#">SEO</a>
+                            <a class="dropdown-item" href="#">PPC</a>
+                          </div>
+                        </div>
                         <li class="nav-item">
                           <a class="nav-link" routerLink="music-teacher">PACKAGES</a>
                         </li>

@@ -162,6 +162,11 @@ width: 100%;
   width: 100%;
 }
 
+.boderForm{
+  border: 2px solid white;
+  border-radius: 4rem;
+}
+
 
 
 
@@ -238,4 +243,27 @@ transform: translateX(0);
   .banner-h1{
     width: 80%;
     margin: auto;
+  }
+
+  .webTestmonial{
+    width: 100%;
+  }
+
+  #adsroleLogo{
+    width: 80px;
+    height: 80px;
+  }
+  #adsroleText{
+    color: white;
+    display: inline;
+    font-weight: bolder;
+    font-size:xx-large ;
+    
+  }
+  .justify_content{
+    text-align: justify;
+  }
+
+  .greenbgColor{
+    background-color: rgb(155, 202, 59);
   }

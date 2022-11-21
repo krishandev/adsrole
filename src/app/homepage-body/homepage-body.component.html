@@ -7,27 +7,26 @@
                 <source src="assets\banner-new-video_compressed.mp4" type="Video/mp4">
             </video>
         </div>
-        <div id="bgColor1" class="col-md-4 " >
-            <div class="container">
+        <div id="bgColor1" class="col-md-4 pb-5" >
+            <div class="container ">
+                <h4>Get Your FREE Website Audit</h4> &nbsp;
                 <form action="action_page.php">
               
-                  <label for="fname">First Name</label>
-                  <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                  <label for="websiteURL">Website URL</label>
+                  <input type="text" id="websiteURL" name="websiteURL" placeholder="Enter Your Website URL..">
               
-                  <label for="lname">Last Name</label>
-                  <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                  <label for="name">Name</label>
+                  <input type="text" id="name" name="name" placeholder="Enter Your Name..">
+                  <label for="email">Email</label>
+                  <input type="text" id="email" name="email" placeholder="Enter Your Email..">
+
+                  <label for="phone">Phone</label>
+                  <input type="text" id="phone" name="phone" placeholder="Enter Your Phone Number..">
+
+                  <label for="cname">Company Name</label>
+                  <input type="text" id="cname" name="cname" placeholder="Enter Your Company Name..">
               
-                  <label for="country">Country</label>
-                  <select id="country" name="country">
-                    <option value="australia">Australia</option>
-                    <option value="canada">Canada</option>
-                    <option value="usa">USA</option>
-                  </select>
-              
-                  <label for="subject">Subject</label>
-                  <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-              
-                  <input type="submit" value="Submit">
+                  <input type="submit" value="Start My Website Analysis">
               
                 </form>
               </div>
@@ -43,13 +42,21 @@
 <!-- Row 3 clutch certificate-->
 
 <div class="row ">
-    <div class="col-md-4 justify-content-center"><img src="assets\Web-Developer-2022.png" alt="clutch certificate"></div>
-    <div class="col-md-4 justify-content-center"><img src="assets\Top-Advertising.png" alt="clutch certificate 1"></div>
-    <div class="col-md-4 justify-content-center"><img src="assets\Seo-Companies-2022.png" alt="clutch certificate 2"></div>
+    <div class="col-md-4 justify-content-center"><img [src]="WebDeveloper" alt="clutch certificate"></div>
+    <div class="col-md-4 justify-content-center"><img [src]="TopAdvertising" alt="clutch certificate 1"></div>
+    <div class="col-md-4 justify-content-center"><img [src]="SeoCompanies" alt="clutch certificate 2"></div>
+</div>
+
+<div class="row">
+    <div class="col md-12"><h2 id="heading1" class="section-head">2022 Award-Winning Digital Marketing Company!</h2></div>
 </div>
 
 <div class="row">
     <div id="bgColor1" class="col-md-12">
+        <div class="d-flex align-items-center justify-content-center mb-4">
+            <img id="adsroleLogo" [src]="AdsRolelogo" alt="logo"><p id="adsroleText">AdsRole</p>
+        </div>
+       
         <h2 id="textColor1" style="text-align: center;" class="section-head">Top Digital Marketing Company in USA, UK, AU & UAE</h2>
     </div>
 </div>
@@ -61,10 +68,10 @@
 
     
     <div id="bgcolor2" class="container-fluid">
-        <div  class="row justify-content-center">
-            <div id="GreenBg" class="col-md-3 marginRight justify-content-center"><img src="assets\webdesign.png" alt="webdesign"></div>
-            <div id="GreenBg" class="col-md-3 marginRight justify-content-center"><img src="assets\seo.png" alt="SEO"></div>
-            <div id="GreenBg" class="col-md-3 marginRight justify-content-center"><img src="assets\ppc-1.png" alt="PPC"></div>
+        <div  class="row justify-content-center p-4 ">
+            <div id="GreenBg" class="col-md-3 marginRight justify-content-center"><img [src]="webdesign" alt="webdesign"></div>
+            <div id="GreenBg" class="col-md-3 marginRight justify-content-center mt-3"><img [src]="seo" alt="SEO"></div>
+            <div id="GreenBg" class="col-md-3 marginRight justify-content-center mt-3"><img [src]="ppc" alt="PPC"></div>
             <!-- <div id="GreenBg" class="col-md-2"><img src="assets\smo.png" alt="SMO"></div> -->
         </div>
     </div>
@@ -116,12 +123,12 @@
 
     <div class="container whiteBgColor">
         <div class="row whiteBgColor">
-            <div class="col-md-6 googleImgSize"><img src="assets\google-new.jpg"></div>
+            <div class="col-md-6 googleImgSize"><img [src]="googlenew"></div>
             <div class="col-md-6 whiteBgColor">
                 <h6>
                     GROW TRAFFIC & INCREASE REVENUE</h6>
                     <h2>Get Found on the 1st Page!</h2>
-                    <p>We offer professional SEO services that help websites increase their organic search score drastically in order to compete for the highest rankings — even when it comes to highly competitive keywords.</p>
+                    <p class="justify_content">We offer professional SEO services that help websites increase their organic search score drastically in order to compete for the highest rankings — even when it comes to highly competitive keywords.</p>
                     <button type="button" id="buttoncss" class="btn btn-primary">Learn More About Us</button>
             </div>
         </div>
@@ -130,7 +137,9 @@
         <div class="row">
             <div class="col-md-4">
                 <h2>We Will Rock Your SEO!</h2>
-                <p>AdsRole was created to provide highly affordable, yet highly effective web design and digital marketing services to small and medium sized businesses. Our mission is to empower businesses with superior websites that truly deliver results, along with the necessary marketing solutions that generate leads, sales and dramatically improve your bottom line.</p>
+                <p class="justify_content">AdsRole was created to provide highly affordable, yet highly effective web design and digital marketing services to small and medium sized businesses. Our mission is to empower businesses with superior websites that truly deliver results, along with the necessary marketing solutions that generate leads, sales and dramatically improve your bottom line.</p>
+
+                <button type="button" class="btn btn-success greenbgColor">Get Your Free Proposal</button>
             </div>
             <div class="col-md-8">
                 <video controls height="600px" width="100%" loop autoplay muted>
@@ -140,25 +149,25 @@
         </div>
     </div>
 
-    <div class="container-fluid" id="bgcolor3">
+    <div class="container-fluid p-5" id="bgcolor3">
         <div class="row">
-            <div class="col-md-2"><img src="assets\6671-01-01.png"></div>
+            <div class="col-md-2"><img [src]="man1"></div>
             <div class="col-md-7">
-                <h3>See how optimized your website is for an exact keyword — for FREE!</h3>
-                <h2>WHAT'S YOUR WEBSITE SEO SCORE ?</h2>
-<div class="container">
-    <div class="row">
-        <div class="col-md-12">
+                <h5 class="text-center">See how optimized your website is for an exact keyword — for FREE!</h5>
+                <h2 class="text-center">WHAT'S YOUR WEBSITE SEO SCORE ?</h2>
+<div class="container bg-color-default boderForm">
+    <div class="row bg-color-default ">
+        <div class="col-md-12 bg-color-default">
 
 
-            <form action="action_page.php">
-                <div class="row">
+            <form action="action_page.php" class="bg-color-default">
+                <div class="row bg-color-default">
                 
-                  <div class="col-md-5 ">
-                    <input type="text" id="websiteurl" name="website" placeholder="Your Website">
+                  <div class="col-md-5 bg-color-default">
+                    <input class="bg-color-default" type="text" id="websiteurl" name="website" placeholder="Your Website">
                   </div>
                   <div class="col-md-5">
-                    <input type="text" id="email" name="email" placeholder="Your Email">
+                    <input class="bg-color-default" type="text" id="email" name="email" placeholder="Your Email">
                   </div>
                   <div class="col-md-1">
                     <input type="submit" value="Submit">
@@ -181,7 +190,7 @@
                 
 
             </div>
-            <div class="col-md-2"><img src="assets\man2.png"></div>
+            <div class="col-md-2"><img [src]="man2"></div>
         </div>
 
         <div class="row">
@@ -197,32 +206,32 @@
         <div class="row">
             <div class="col-md-4">
                 <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="assets\ONLINE REPUTATION MANAGEMENT.jpg" alt="Card image cap">
+                    <img class="card-img-top" [src]="ONLINEREPUTATIONMANAGEMENT" alt="Card image cap">
                     <div class="card-body">
                       <h5 class="card-title">ONLINE REPUTATION MANAGEMENT</h5>
-                      <p class="card-text">It implies organically influencing and maintaining the individual or group reputation by creating a positive image of the brand or product across the web. AdsRole will help to protect your reputation!</p>
+                      <p class="card-text justify_content">It implies organically influencing and maintaining the individual or group reputation by creating a positive image of the brand or product across the web. AdsRole will help to protect your reputation!</p>
                       <a href="#" class="btn btn-primary">Learn More</a>
                     </div>
                   </div>
             </div>
             <div class="col-md-4">
                 <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="assets\INCREASE YOUR.jpg" alt="Card image cap">
+                    <img class="card-img-top" [src]="INCREASEYOUR" alt="Card image cap">
                     <div class="card-body">
                       <h5 class="card-title">INCREASE YOUR 
                         CONVERSIONS</h5>
-                      <p class="card-text">AdsRole strategies attract relevant and quality traffic by making website visitors interested in your products and services so that you don’t lose the never-ending battle of conversion and sales.</p>
+                      <p class="card-text justify_content">AdsRole strategies attract relevant and quality traffic by making website visitors interested in your products and services so that you don’t lose the never-ending battle of conversion and sales.</p>
                       <a href="#" class="btn btn-primary">Learn More</a>
                     </div>
                   </div>
             </div>
             <div class="col-md-4">
                 <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="assets\real-time analytics.jpg" alt="Card image cap">
+                    <img class="card-img-top" [src]="realtimeanalytics" alt="Card image cap">
                     <div class="card-body">
                       <h5 class="card-title">REAL-TIME
                         ANALYTICS</h5>
-                      <p class="card-text">AdsRole integrated data collection along with real-time data analytics approach uncover the impact of strategies on your website enhancing customer experience and unfolding new business channels.</p>
+                      <p class="card-text justify_content">AdsRole integrated data collection along with real-time data analytics approach uncover the impact of strategies on your website enhancing customer experience and unfolding new business channels.</p>
                       <a href="#" class="btn btn-primary">Learn More</a>
                     </div>
                   </div>
@@ -238,7 +247,7 @@
 </div>
 
 <div class="container">
-    <div class="row">
+    <!-- <div class="row">
         <div class="col-md-6 fortfoliImg"><a href=""><img [src]="alphamindImg"></a></div>
         <div class="col-md-6 fortfoliImg"><img [src]="rondavisImg"></div>
     </div>
@@ -251,13 +260,18 @@
     <div class="row">
         <div class="col-md-6 fortfoliImg"><a href=""><img [src]="sellyourhomejerseyImg"></a></div>
         <div class="col-md-6 fortfoliImg"><a href=""><img [src]="astagingcompanyImg"></a></div>
+    </div> -->
+    <div class="row">
+        <div class="col-md-12">
+            <a href="#"><img class="webTestmonial" [src]="webtestimonial"></a>
+        </div>
     </div>
 
 </div>
 
 <div class="container-fluid" id="bgcolordarkBlue12">
     <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-12 pt-5">
             <h3 class="text-center" style="color: white;">LET'S INCREASE YOUR TRAFFIC</h3>
         </div>
     </div>
@@ -282,6 +296,189 @@
         </div>
     </div>
 </div>
+
+<!-- Web Content Start -->
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+
+            <div id="accordion">
+                <div class="card">
+                  <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                      <button class="btn " data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <h3>SEO Services and Digital Marketing Agency in Texas</h3>
+                      </button>
+                    </h5>
+                  </div>
+              
+                  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body">
+                        <p style="text-align: justify;">At AdsRole, as a reliable&nbsp;<strong>Texas internet marketing partner</strong>, we provide end-to-end services to help you meet the digital marketing requirements of your business.&nbsp; Apart from SEO, the services of our&nbsp;<strong>digital marketing company Texas</strong>&nbsp;also include other vital aspects of internet marketing.&nbsp;As a Leading&nbsp;<strong>Digital Marketing Agency Texas</strong>, we strive to add more value to your business by offering services of the highest quality. No matter what your objectives are, you can rest assured that our<strong>&nbsp;SEO consultant Texas</strong>&nbsp;will formulate the best strategy based on your needs.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                      <button class="btn collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <h3>Best Search Engine Marketing and SEO Company Texas</h3>
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                    <div class="card-body">
+                        <p style="text-align: justify;">As one of the leading&nbsp;<strong>internet marketing company Texas</strong>, AdsRole is committed to providing the best search engine marketing services by applying all its core concepts. This includes search engine optimization (SEO) services and paid advertisement. The former is a long-term marketing strategy for achieving targetted goals, whereas the latter is a paid service for bringing in more traffic to a website.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                      <button class="btn collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <h3>Why is SEO and Internet Marketing so Important?</h3>
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                    <div class="card-body">
+                        <p style="text-align: justify;">SEO and internet marketing enables companies to achieve a higher number of the target audience and convert them into leads.&nbsp; Because they involve digital technology and the power of the Internet, a firm can reach out to a number of potential customers worldwide within a shorter duration of time by means of a website.</p>
+                        <p style="text-align: justify;">The position of a company&rsquo;s website on the search engine result page (SERP) of Google and other search engine services promotes its business offerings.</p>
+                        <p style="text-align: justify;">The availability of analytics tools makes it easy for company owners to monitor the effectiveness of the marketing strategy of their company. If required, they can make changes to their existing strategy to attain their business goals.</p>
+                    </div>
+                  </div>
+                </div>
+
+              <!-- Card 4 -->
+
+              <div class="card">
+                <div class="card-header" id="headingFour">
+                  <h5 class="mb-0">
+                    <button class="btn collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        <h3>What Does an Online Marketing Agency Do?</h3>
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                  <div class="card-body">
+                    <p style="text-align: justify;">An online marketing agency makes use of the internet to promote the goods and services of a company. The marketing strategies of such companies involve different methodologies of internet marketing. These include search engine optimization (SEO) services and paid advertisement.</p>
+                    <p style="text-align: justify;">Apart from the advertisement of the goods and services of a company, our&nbsp;<strong>internet marketing agency Texas</strong>&nbsp;also offers the following services:</p>
+                    <ul>
+                    <li style="text-align: justify;"><strong>Improvement in business:</strong>&nbsp;Online marketing agencies devise strategies for enhanced productivity and efficiency of their client business organizations. Also, they seek ways to implement them.</li>
+                    <li style="text-align: justify;"><strong>Establish your brand online:</strong>&nbsp;Digital marketing agencies enable client organizations to reach out to their ideal buyers through the best platforms and channels.</li>
+                    <li style="text-align: justify;"><strong>Stimulating your returns on investment:</strong>&nbsp;Digital marketing agencies are capable of striking the right balance between the marketing activities and the outcomes.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 5 -->
+
+              <div class="card">
+                <div class="card-header" id="headingFive">
+                  <h5 class="mb-0">
+                    <button class="btn collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        <h3>What is included in Digital Marketing Services?</h3>
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+                  <div class="card-body">
+                    <p style="text-align: justify;">In a nutshell, digital marketing services correspond to all those services that help a company stretch its business potential to new areas. To accomplish this task, digital marketing agencies include the following processes in their digital marketing strategies.</p>
+                    <ul style="text-align: justify;">
+                    <li>SEO services</li>
+                    <li>Social media advertising</li>
+                    <li>Pay Per Click</li>
+                    <li>Web design and web development</li>
+                    </ul>
+                    <p style="text-align: justify;">At AdsRole &ndash; the top&nbsp;<strong>online marketing company Texas</strong>&nbsp;&ndash; we understand the importance of the aforementioned strategies for our clients&rsquo; success.</p>
+                    <p style="text-align: justify;">As a leading&nbsp;<strong>online marketing agency Texas</strong>, AdsRole is committed to providing you with the best results in all digital marketing segments based on your needs.</p>
+                    <p style="text-align: justify;"><strong>i.&nbsp;Search Engine Optimization Service (SEO)</strong></p>
+                    <p style="text-align: justify;">At AdsRole &ndash; the&nbsp;<strong>best SEO agency in Texas</strong>&nbsp;&ndash; we provide a comprehensive range of search engine optimization (SEO) solutions for all your business needs. Our team of content marketers uses impeccable content, linking strategies and all other best practices to increase the outreach of your brand among your target audience.</p>
+                    <p style="text-align: justify;">As a&nbsp;<strong>top SEO company Texas</strong>, we understand the importance of providing cost-effective SEO services without compromising with the quality of service. Our objective behind it is to make sure you get what you intend to achieve with the best&nbsp;<strong>Search Engine Optimization Services Texas</strong>&nbsp;without straining the finances of your company.</p>
+                    <p style="text-align: justify;">Regardless of the position of your website on the organic search engine rankings on Google and other leading search engine service providers AdsRole, as a result-oriented&nbsp;<strong>website SEO company Texas</strong>, is committed to provide you with the best that your money can get.</p>
+                    <p style="text-align: justify;"><strong>ii.&nbsp;Pay Per Click Management Services (PPC)</strong></p>
+                    <p style="text-align: justify;">AdsRole &ndash; the&nbsp;<strong>Top PPC Company Texas</strong>&nbsp;&ndash; aims to increase the number of visits to the landing page of your website. Our professionals identify the right set of keywords to make sure you get a clear advantage and profitable returns for your investment in a PPC ad.</p>
+                    <p style="text-align: justify;">At AdsRole &ndash; the&nbsp;<strong>Best PPC Agency Texas</strong>&nbsp;&ndash; we have a wide range of&nbsp;<strong>affordable PPC packages</strong>&nbsp;to help you meet your business requirements within your budget. By investing in our Pay Per Click Services, you can rest assured that you will get timely updates regarding the progression of your strategy from our professionals from time to time.</p>
+                    <p style="text-align: justify;">As a customer-centric&nbsp;<strong>Website PPC Company</strong>, we believe in providing our clients with good value for money. Our professionals evaluate your business needs from time to time to determine if they need to make any change in their existing strategy.</p>
+                    <p style="text-align: justify;"><strong>iii. Social Media Optimization Services (SMO)</strong></p>
+                    <p style="text-align: justify;">At AdsRole - the&nbsp;<strong>Best SMO Agency Texas</strong>&nbsp;- we target to increase the fan following on your company&rsquo;s social channel. We strive to explore the potential to the powerful search engine traffic to provide the best&nbsp;<strong>Social Media Optimization Services Texas</strong>&nbsp;at&nbsp;<strong>affordable SMO packages</strong>.</p>
+                    <p style="text-align: justify;">As the leading&nbsp;<strong>Website SMO Company Texas</strong>, we aim to connect your business with prospective customers and make them loyal to your services.</p>
+                    <p style="text-align: justify;"><strong>iv.&nbsp;Search Engine Marketing Services (SEM)</strong></p>
+                    <p style="text-align: justify;">AdsRole is the&nbsp;<strong>Best SEM Agency Texas</strong>. Our Search Engine Marketing Services are aimed at connecting your business with your target audience and vice-versa. Our top SEM company has affordable SEM packages to keep your business organization ahead without straining your finances.</p>
+                    <p style="text-align: justify;">As a leading&nbsp;<strong>Website SEM Company</strong>, we strive to provide good value for money and the best your money can get.</p>
+                    <p style="text-align: justify;"><strong>v.&nbsp;Conversion Rate Optimization Services (CRO)</strong></p>
+                    <p style="text-align: justify;">Over the years AdsRole has cemented its position as the&nbsp;<strong>Best CRO Agency Texas</strong>. We optimize your business website to promote the rate of conversions for higher business outcomes. What&rsquo;s more, we provide&nbsp;<strong>Conversion Rate Optimization Services Texas</strong>&nbsp;at&nbsp;<strong>Affordable CRO Packages</strong>.</p>
+                    <p style="text-align: justify;">From improving the user interface to building the trust of users with the best user experience, the professionals of our&nbsp;<strong>Top CRO Company Texas</strong>&nbsp;make every possible effort to turn visitors into buyers. As a top-notch website CRO company<strong>,</strong>&nbsp;we strive to meet your targeted conversion goals.</p>
+                    <p style="text-align: justify;"><strong>vi.&nbsp;Online Reputation Management Services (ORM)</strong></p>
+                    <p style="text-align: justify;">Online reputation management can either make or break the deal for your business. Therefore, we provide the best<strong>&nbsp;Online Reputation Management Services Texas</strong>&nbsp;at&nbsp;<strong>Affordable ORM Packages</strong>. AdsRole - the&nbsp;<strong>Top ORM Company Texas</strong>&nbsp;- offers comprehensive services to manage the reputation of your website and business.</p>
+                    <p style="text-align: justify;">In line with the services of the&nbsp;<strong>Best ORM Agency Texas</strong>, we seek to eliminate the negative reputation of your brand. At the same time, our website ORM company also seeks to develop a positive viewpoint of your goods and services by increasing its online reputation.</p>
+                    <p style="text-align: justify;"><strong>vii. Content Marketing Services</strong></p>
+                    <p style="text-align: justify;">Content is the backbone of the content marketing strategy for a brand. AdsRole - the&nbsp;<strong>Best Content Marketing Agency Texas</strong>&nbsp;- offers&nbsp;<strong>Affordable Content Writing Services</strong>&nbsp;to bring more traffic to your website and generate more leads based on impeccable content.</p>
+                    <p style="text-align: justify;">As a&nbsp;<strong>Top Content Marketing Company</strong>, AdsRole seeks ways to boost the organic rankings of your website on the search engine result pages of Google. The content writers of our&nbsp;<strong>Website Content Company Texas</strong>&nbsp;collaborate with our team of SEO professionals to bring the best results for your business and offer good value for money with quality services.</p>
+                    <p style="text-align: justify;"><strong>viii. Local SEO Services</strong></p>
+                    <p style="text-align: justify;">Local consumers look for the services of local businesses either online or using their smartphones. Keeping this in mind, we provide tailored services at the most&nbsp;<strong>Affordable Local SEO Packages</strong>.</p>
+                    <p style="text-align: justify;">As the&nbsp;<strong>Best Local SEO Agency Texas</strong>, we seek ways to boost the rankings of your website, thereby, further enhancing its capacity to convert leads into sales. As the&nbsp;<strong>Top Local SEO Company Texas</strong>, we help mobile users to discover your business and vice versa. To accomplish this task, our&nbsp;<strong>Local Search Engine Optimization Company</strong>&nbsp;puts your business on Google&rsquo;s map.</p>
+                    <p style="text-align: justify;"><strong>ix.&nbsp;Website Design and Development Services</strong></p>
+                    <p style="text-align: justify;">A visually pleasing website with all the functionalities and optimized design - that&rsquo;s the motto of AdsRole for top-notch&nbsp;<strong>Website Redesign Services Texas</strong>. In line with our reputation as the&nbsp;<strong>Best Website Design Agency Texas</strong>, we focus on the key aspects of website design and development at both the fundamental and advanced levels.</p>
+                    <p style="text-align: justify;">The objective of AdsRole as the&nbsp;<strong>Top Website Development Company Texas</strong>&nbsp;is to offer top-notch and visually appealing professional websites with all the modern features and the right design. We provide it at&nbsp;<strong>Affordable Website Design Packages</strong>&nbsp;to suit your budget.</p>
+                    <p style="text-align: justify;"><strong>x.&nbsp;Website Hosting &amp; Maintenance Services</strong></p>
+                    <p style="text-align: justify;">No matter how visually pleasing and functional your website may be, it will not be able to sustain a load of content on it without the proper website hosting and maintenance services. At AdsRole - the<strong>&nbsp;Top Website Maintenance Agency</strong>&nbsp;and the&nbsp;<strong>Best Hosting &amp; Security Services</strong>&nbsp;- we explore all possibilities to host and maintain your website securely.</p>
+                    <p style="text-align: justify;">Our&nbsp;<strong>Affordable Website Maintenance Services Texas</strong>&nbsp;aim at offering tailored services for your business without straining your company&rsquo;s budget.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- card 6  -->
+
+              <div class="card">
+                <div class="card-header" id="headingSix">
+                  <h5 class="mb-0">
+                    <button class="btn collapsed" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                        <h3>Why Should Hire an SEO Company?</h3>
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
+                  <div class="card-body">
+                    <p style="text-align: justify;">Businesses launch marketing campaigns to attract the attention of their target audience to specific products and services. The idea behind it is to convince them to invest in a company&rsquo;s products and services. For this to happen, a company needs to reach out to its target audience; the more target audience it reaches the better.</p>
+                    <p style="text-align: justify;">SEO and internet marketing enables companies to achieve this goal without spending a fortune or months. Also, it reduces the requirement for manpower as necessitated by the traditional methods of marketing.</p>
+                    <p style="text-align: justify;">Because it involves digital technology and the power of the Internet, a firm can reach out to a number of potential customers worldwide within a shorter duration of time by means of a website. The position of a company&rsquo;s website on the search engine result page (SERP) of Google and other search engine services promote its business offerings.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- card 7 -->
+
+              <div class="card">
+                <div class="card-header" id="headingSeven">
+                  <h5 class="mb-0">
+                    <button class="btn collapsed" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                        <h3>What makes AdsRole a leading SEO Agency?</h3>
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordion">
+                  <div class="card-body">
+                    <p style="text-align: justify;">At AdsRole, our professionals assess the requirements for paid internet marketing and&nbsp;<strong>SEO services Texas</strong>&nbsp;for your company. Thereafter, they formulate the best strategy to increase the traffic on your business website.</p>
+                    <p style="text-align: justify;">At AdsRole, we do everything from top to bottom to help your business progress to the next level. Our&nbsp;<strong>SEO agency Texas</strong>&nbsp;formulates a powerful strategy after evaluating your business needs to bring in more profits for your brand.&nbsp;<strong>Our marketing agency Texas</strong>&nbsp;is committed to helping establish the online expertise and brand authority of your company.</p>
+                    <p style="text-align: justify;">We combine the power of the internet and digital technology to enable your business to discover its target audience and vice-versa both at domestic and international levels swiftly. Plus, our&nbsp;<strong>Texas SEO company</strong>&nbsp;has a team of professionals who evaluate the outcomes of their digital marketing strategy with the right analytical tools. If needed, they do not hesitate to introduce changes to their existing strategy.</p>
+                  </div>
+                </div>
+              </div>
+
+
+
+
+              </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Web Content End  -->
+
 
 <div class="container-fluid pd_25" id="bgcolor3">
     <div class="row section-head">
@@ -347,18 +544,18 @@
                 <div class="carousel-item space-eq">
                     <div class="col-md-3">
                         <div class="card card-body">
-                            <img class="img-fluid" src="assets\hubspot-certified-partner.jpg">
+                            <img class="img-fluid" [src]="hubspotcertifiedpartner">
                         </div>
                     </div>
 
                     <div class="col-md-3">
                         <div class="card card-body">
-                            <img class="img-fluid" src="assets\infusionsoft-partners.jpg">
+                            <img class="img-fluid" [src]="infusionsoftpartners">
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="card card-body">
-                            <img class="img-fluid" src="assets\hostinger-partner.jpg">
+                            <img class="img-fluid" [src]="hostingerpartner">
                         </div>
                     </div>
 
@@ -393,7 +590,7 @@
 
     <div class="row">
         <div class="col-md-2">
-            <img class="testimonialImg" src="assets\Ali-Zanjani.jpg">
+            <img class="testimonialImg" [src]="AliZanjani">
             <h6>Ali Zanjani</h6>
             <i class="fa-solid fa-star"></i>
             <i class="fa-solid fa-star"></i>
@@ -402,14 +599,14 @@
             <i class="fa-solid fa-star"></i>
         </div>
         <div class="col-md-9">
-            <p>AdsRole TX has helped me in taking my website to the 1st page of Google. The project manager assigned for my website was really supportive, helpful and professional. AdsRole is the best Digital Marketing company of Texas.</p> <a href="https://www.google.com/search?q=Adsrole+texas&rlz=1C1RXQR_enIN929IN929&oq=Adsrole+texas&aqs=chrome..69i57j69i60j69i65j69i61.3657j0j1&sourceid=chrome&ie=UTF-8#lrd=0x864c2d2b7b26d43d:0x3773207e90b5ba5,1,,," target="_blank"><img src="assets\via_google.png" alt="via Google"></a> 
+            <p>AdsRole TX has helped me in taking my website to the 1st page of Google. The project manager assigned for my website was really supportive, helpful and professional. AdsRole is the best Digital Marketing company of Texas.</p> <a href="https://www.google.com/search?q=Adsrole+texas&rlz=1C1RXQR_enIN929IN929&oq=Adsrole+texas&aqs=chrome..69i57j69i60j69i65j69i61.3657j0j1&sourceid=chrome&ie=UTF-8#lrd=0x864c2d2b7b26d43d:0x3773207e90b5ba5,1,,," target="_blank"><img [src]="viagoogle" alt="via Google"></a> 
         </div>
     </div>
 
         <!-- Review 2  -->
         <div class="row ">
             <div class="col-md-2 ">
-                <img class="testimonialImg" src="assets\Victor-Galvan.jpg">
+                <img class="testimonialImg" [src]="VictorGalvan">
                 <h6>Ali Zanjani</h6>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
@@ -418,8 +615,9 @@
                 <i class="fa-solid fa-star"></i>
             </div>
             <div class="col-md-9">
-                <p>Great working with Adsrole. A person answers the phone not a machine when you need them. It's a relief to works with a Company that does what they say they will do. High praise, highly recommended.</p> <a href="https://www.google.com/search?q=Adsrole+texas&rlz=1C1RXQR_enIN929IN929&oq=Adsrole+texas&aqs=chrome..69i57j69i60j69i65j69i61.3657j0j1&sourceid=chrome&ie=UTF-8#lrd=0x864c2d2b7b26d43d:0x3773207e90b5ba5,1,,," target="_blank"><img src="assets\via_google.png" alt="via Google"></a> 
+                <p>Great working with Adsrole. A person answers the phone not a machine when you need them. It's a relief to works with a Company that does what they say they will do. High praise, highly recommended.</p> <a href="https://www.google.com/search?q=Adsrole+texas&rlz=1C1RXQR_enIN929IN929&oq=Adsrole+texas&aqs=chrome..69i57j69i60j69i65j69i61.3657j0j1&sourceid=chrome&ie=UTF-8#lrd=0x864c2d2b7b26d43d:0x3773207e90b5ba5,1,,," target="_blank"><img [src]="viagoogle" alt="via Google"></a> 
             </div>
         </div>
 
 </div>
+

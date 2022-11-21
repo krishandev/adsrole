@@ -33,3 +33,7 @@
 .foterimgIconWidth{
 width: 40%;
 }
+
+.position_fix{
+    position: fixed;
+}
