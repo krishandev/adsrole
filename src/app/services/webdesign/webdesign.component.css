@@ -33,3 +33,15 @@ height: 30px;
     height: 250px;
     padding: 10px;
   }
+  .fortfoliImg img{
+    width: 100%;
+    }
+
+    .Bg_Color{
+        background-color: rgb(36, 92, 243);
+        color: white;
+    }
+
+    .display_flex{
+        display: flex;
+    }

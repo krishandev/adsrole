@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'app-webdesign',
   templateUrl: './webdesign.component.html',
@@ -26,6 +27,13 @@ export class WebdesignComponent implements OnInit {
   corporate:string;
   videocontent:string;
 
+  alphamindImg: string;
+  rondavisImg:string;
+  adoreImg:string;
+  chismImg:string;
+  sellyourhomejerseyImg:string;
+  astagingcompanyImg:string;
+
   constructor() {
     this.webdesign='assets/webdesign/webdesign.webp';
     this.clutch='assets/webdesign/clutch.webp';
@@ -45,6 +53,13 @@ export class WebdesignComponent implements OnInit {
     this.portfolio='assets/webdesign/portfolio.webp'
     this.corporate='assets/webdesign/corporate.webp'
     this.videocontent='assets/webdesign/videocontent.webp'
+
+    this.alphamindImg='assets/webp_images/alphamind.webp'
+    this.rondavisImg='assets/webp_images/rondavis.webp'
+    this.adoreImg='assets/webp_images/adore.webp'
+    this.chismImg='assets/webp_images/chism.webp'
+    this.sellyourhomejerseyImg='assets/webp_images/sellyourhomejersey.com_.webp'
+    this.astagingcompanyImg='assets/webp_images/astagingcompany.com_.webp'
 
    }
 

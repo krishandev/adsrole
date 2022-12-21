@@ -1,0 +1,32 @@
+<ngx-spinner bdColor="rgba(0, 0, 0, 0.8)" size="medium" color="#fff" type="square-jelly-box" [fullScreen]="true">
+    <p style="color: white"> Loading... </p>
+</ngx-spinner>
+
+<h1>Blog</h1>
+<span>{{errorMessage}}</span>
+<div class="container blog_border" *ngIf="singlePosts">
+    <div class="row">
+        <div class="col-md-12">
+            <img src={{singlePosts.featured_media.rendered}}>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <h2>{{singlePosts.title.rendered}}</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            By<a href="">AdsRole</a>
+        </div>
+        <div class="col-md-6">
+            Date<a href="">{{singlePosts.date | date:'short'}}</a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <p>{{singlePosts.content.rendered}}</p>
+        </div>
+    </div>
+   
+</div>

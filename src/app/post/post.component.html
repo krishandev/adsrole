@@ -1,0 +1,35 @@
+<ngx-spinner bdColor="rgba(0, 0, 0, 0.8)" size="medium" color="#fff" type="square-jelly-box" [fullScreen]="true">
+    <p style="color: white"> Loading... </p>
+</ngx-spinner>
+
+<h1>Blog</h1>
+<span>{{errorMessage}}</span>
+<div class="container blog_border" *ngFor="let post of blogPosts">
+    <div class="row">
+        <div class="col-md-12">
+            <h2>{{post.title.rendered}}</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            By<a href="">AdsRole</a>
+        </div>
+        <div class="col-md-6">
+            Date<a href="">{{post.date | date:'short'}}</a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <p>{{post.excerpt.rendered}}</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <button type="button" class="btn btn-primary" [routerLink]="['/posts', post.post_slug]">Read More</button>
+
+            <!-- <button type="button" class="btn btn-primary" [routerLink]="['/post']" [queryParams]="{success:true}" post.slug]>Read More</button> -->
+
+
+        </div>
+    </div>
+</div>
